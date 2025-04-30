@@ -34,15 +34,37 @@ export default function ArticlePage({ article }: InferGetStaticPropsType<typeof 
   const router = useRouter();
 
   if (router.isFallback) {
-    return <p>Chargement en cours...</p>;
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-xl text-gray-500">Chargement en cours...</p>
+      </div>
+    );
+  }
+
+  if (!article) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <p className="text-xl text-red-500">Article non trouvé</p>
+      </div>
+    );
   }
 
   return (
-    <article>
-      <h1>{article.title}</h1>
-      <Image src={article.image} alt={article.title} width={600} height={400} />
-      <p><em>Publié le {new Date(article.createdAt).toLocaleDateString()}</em></p>
-      <p>{article.content}</p>
+    <article className="p-6 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-semibold mb-4">{article.title}</h1>
+      <div className="mb-4">
+        <Image
+          src={article.image}
+          alt={article.title}
+          width={600}
+          height={400}
+          className="rounded-lg shadow-md object-cover"
+        />
+      </div>
+      <p className="text-gray-600 italic mb-4">
+        <em>Publié le {new Date(article.createdAt).toLocaleDateString()}</em>
+      </p>
+      <p className="text-lg text-gray-800">{article.content}</p>
     </article>
   );
 }

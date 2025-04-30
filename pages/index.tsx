@@ -27,15 +27,16 @@ export default function Home({ articles }: InferGetStaticPropsType<typeof getSta
           <Image
             src={article.image}
             alt={article.title}
-            width={50}
-            height={50}
-            className="my-2 w-full object-cover rounded"
+            width={150}
+            height={100}
+            className="my-2 w-auto max-w-full object-cover rounded"
           />
           <p className="text-gray-700">{article.description}</p>
         </div>
       ))}
     </div>
   </main>
+  
   
 
   );
