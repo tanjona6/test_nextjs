@@ -5,7 +5,7 @@
       "description": "Introduction au premier article",
       "image": "/images/articles1.jpg",
       "content": "Notre bibliothèque créative ne comprend aucun contenu généré par l’IA.Choisir vos visuels en toute confiance : notre bibliothèque créative ne comprend aucun contenu généré par IA. Vos recherches vous permettent de trouver uniquement des visuels sécurisés, fiables et de haute qualité.",
-      "createdAt": "2024-04-01T10:00:00Z"
+      "createdAt": "2024-04-01"
     },
     {
       "id": "2",
@@ -13,7 +13,7 @@
       "description": "Résumé rapide du deuxième article",
       "image": "/images/article2.jpg",
       "content": "Notre bibliothèque créative ne comprend aucun contenu généré par l’IA.Choisir vos visuels en toute confiance : notre bibliothèque créative ne comprend aucun contenu généré par IA. Vos recherches vous permettent de trouver uniquement des visuels sécurisés, fiables et de haute qualité.",
-      "createdAt": "2024-04-05T14:30:00Z"
+      "createdAt": "2024-04-05"
     }
   ]
   
